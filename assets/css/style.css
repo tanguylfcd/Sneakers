@@ -21,7 +21,7 @@
 }
 
 .header .header__bottom svg {
-  height: 30px;
+  height: 45px;
   margin-left: 10px;
 }
 
@@ -59,16 +59,43 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-height: 100vh;
+  max-height: 90vh;
   height: 0px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  overflow: hidden;
 }
 
-.header .header__menu li {
+.header .header__menu nav {
+  height: 70vh;
+  width: 70vw;
+}
+
+.header .header__menu nav ul {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__menu nav li {
   list-style-type: none;
+  font-size: 30px;
 }
 
 .header .menu_open {
-  height: 100vh;
-  border: solid 3px red;
+  height: 90vh;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 /*# sourceMappingURL=style.css.map */
