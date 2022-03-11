@@ -1,3 +1,4 @@
+@import url(reset.scss);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,9 +7,14 @@
   font-family: sans-serif;
 }
 
-.header .header__bottom {
+.header {
   background-color: #ffffff;
   height: 60px;
+  border-bottom: solid 1px lightgrey;
+}
+
+.header .header__nav {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,36 +26,33 @@
           align-items: center;
 }
 
-.header .header__bottom svg {
-  height: 45px;
+.header .header__logo {
+  height: 25px;
   margin-left: 10px;
 }
 
-.header .header__bottom nav {
+.header .header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 10px;
 }
 
-.header .header__bottom nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .header__bottom nav ul li {
+.header .header__nav ul li {
   list-style-type: none;
 }
 
-.header .header__bottom nav ul li svg {
+.header .header__nav ul li svg {
   height: 35px;
 }
 
-.header .header__menu {
+.header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +62,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-height: 90vh;
   height: 0px;
   -webkit-transition: 1s ease;
@@ -66,14 +73,12 @@
   overflow: hidden;
 }
 
-.header .header__menu nav {
+.header__menu nav {
   height: 70vh;
   width: 70vw;
 }
 
-.header .header__menu nav ul {
-  height: 100%;
-  width: 100%;
+.header__menu nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,16 +91,79 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-.header .header__menu nav li {
+.header__menu nav li {
   list-style-type: none;
   font-size: 30px;
 }
 
-.header .menu_open {
+.menu_open {
   height: 90vh;
   -webkit-transition: 1s ease;
   transition: 1s ease;
+}
+
+main .section_1 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .section_1 div {
+  margin-top: 40px;
+}
+
+main .section_1 div figure {
+  margin-bottom: 30px;
+}
+
+main .section_1 div figure img {
+  width: 90vw;
+}
+
+main .section_1 div figure figcaption {
+  margin-top: 17px;
+}
+
+main .section_1 div figure figcaption p:first-child {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+main .section_1 div figure figcaption p:last-child {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+main .section_1 div a {
+  padding: 10px 20px;
+  background-color: #1b1b1b;
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main .section_2 div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+main .section_2 div figure {
+  border: solid 2px red;
+  height: 150px;
+  width: 150px;
 }
 /*# sourceMappingURL=style.css.map */
