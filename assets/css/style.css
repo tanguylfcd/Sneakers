@@ -162,11 +162,16 @@ main .section_2 h2 {
 }
 
 main .section_2 .grille {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .section_2 .grille figure {
@@ -206,5 +211,52 @@ main .nouveaute {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .section_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 70px;
+}
+
+main .section_3 h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0 0 15px 20px;
+}
+
+main .section_3 .genre {
+  width: 90%;
+}
+
+main .section_3 .genre figure {
+  text-align: center;
+  position: relative;
+  margin: 5px 0;
+}
+
+main .section_3 .genre figure img {
+  width: 100%;
+}
+
+main .section_3 .genre figure figcaption {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

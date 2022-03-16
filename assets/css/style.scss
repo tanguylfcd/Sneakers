@@ -128,9 +128,10 @@ main {
     }
 
     .grille {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 5px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
 
       figure {
         // border: solid 2px blue;
@@ -156,5 +157,41 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .section_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+
+    h2 {
+      align-self: flex-start;
+      margin: 0 0 15px 20px;
+    }
+
+    .genre {
+      width: 90%;
+      figure {
+        text-align: center;
+        position: relative;
+        margin: 5px 0;
+
+        img {
+          width: 100%;
+        }
+
+        figcaption {
+          position: absolute;
+          top: 50%;
+          left: 40%;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
